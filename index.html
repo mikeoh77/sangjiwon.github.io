@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>(주)상지원</title>
+<style>
+  :root {
+    --cream: #fdf6e6;
+    --cream-deep: #f8e4c2;
+    --orange: #f26a0f;
+    --red-orange: #ff3d00;
+    --ink: #3a2f26;
+    --muted: #8a7a6a;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { height: 100%; }
+  body {
+    background: var(--cream);
+    color: var(--ink);
+    font-family: "Malgun Gothic", "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  header {
+    background: linear-gradient(to bottom, #ffffff 0%, var(--cream) 100%);
+    padding: 20px 5vw 14px;
+  }
+  .brand { display: inline-flex; align-items: baseline; gap: 10px; }
+  .brand .name { font-size: clamp(26px, 5vw, 36px); font-weight: 700; letter-spacing: 1px; color: var(--ink); }
+  .brand .en { font-size: 11px; letter-spacing: 3px; color: var(--muted); }
+
+  .band {
+    height: 34px;
+    background: linear-gradient(to bottom, var(--cream-deep), var(--cream));
+    border-top: 1px solid #efd9b3;
+    border-bottom: 1px solid #efd9b3;
+  }
+
+  main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5vh 5vw;
+  }
+
+  .circle {
+    width: min(86vw, 560px);
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    border: 10px solid var(--orange);
+    background: #fffdf8;
+    box-shadow: 0 0 0 8px rgba(242, 106, 15, 0.12);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 12% 10%;
+  }
+  .label {
+    font-size: clamp(12px, 2.4vw, 15px);
+    letter-spacing: 4px;
+    color: var(--orange);
+    margin-bottom: 4%;
+  }
+  h1 {
+    font-size: clamp(20px, 4.6vw, 30px);
+    line-height: 1.5;
+    font-weight: 700;
+    color: var(--ink);
+  }
+  h1 .em { color: var(--red-orange); }
+  .divider {
+    width: 48px;
+    height: 3px;
+    background: var(--orange);
+    border-radius: 2px;
+    margin: 6% 0;
+  }
+  p {
+    font-size: clamp(15px, 3.2vw, 20px);
+    line-height: 1.7;
+    color: var(--ink);
+  }
+
+  footer {
+    text-align: center;
+    padding: 18px 5vw 26px;
+    font-size: 13px;
+    color: var(--muted);
+  }
+</style>
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <span class="name">(주)상지원</span>
+      <span class="en">SANGJIWON</span>
+    </div>
+  </header>
+  <div class="band"></div>
+
+  <main>
+    <section class="circle" aria-labelledby="notice-title">
+      <div class="label">NOTICE</div>
+      <h1 id="notice-title">
+        (주)상지원은<br>
+        <span class="em">2026년 10월 26일</span>부로<br>
+        영업을 종료합니다.
+      </h1>
+      <div class="divider"></div>
+      <p>
+        그동안 (주)상지원을<br>
+        이용해주셔서 감사합니다.
+      </p>
+    </section>
+  </main>
+
+  <footer>&copy; (주)상지원</footer>
+</body>
+</html>
